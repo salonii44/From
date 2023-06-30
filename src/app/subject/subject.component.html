@@ -1,0 +1,49 @@
+
+<h3>{{currentTime}}</h3>
+<h3>{{current}}</h3>
+<!-- <b>{`moment().endOf('month').format('YYYY-MM-DD')`}</b> -->
+
+
+<p>subject works!</p>
+<div class="my-3">
+  <h2>Subject and Behavior Subject</h2>
+  <hr>
+  <h3>Username is <span class="text-primary">{{username}}</span></h3>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      <app-comp1></app-comp1>
+    </div>
+    <div class="col-md-4">
+      <app-comp2></app-comp2>
+    </div>
+    <div class="col-md-4">
+      <app-comp3></app-comp3>
+    </div>
+  </div>
+</div>
+<p>{{message}}</p>
+
+
+<input type="text" placeholder="Enter"  #inpVal>
+<button (click)="addNewItem(inpVal.value)">Send Data Parent</button>
+<br>
+<br>
+<p>Click the button to print the current page.</p>
+<button type="button" (click)="print_current_page()">Print this page</button>
+
+<input type="text" placeholder="Enter " #inputVal>
+<button (click)="capi(inputVal)">Capitalize</button>
+<!-- <li>{{inputVal}}</li> -->
+
+  <!-- <div class="form-control mt-4,mb-4">
+  <input placeholder="Enter num 1" #num1><br>
+  <input placeholder="Enter num 2" #num2>
+</div>
+  <button (click)="multiply(num1.value,num2.value)">Multiply</button>
+  <button (click)="divide(num1.value,num2.value)">Devide</button>
+  <br>
+
+ <p>The Result is :{{result}}</p> -->
+

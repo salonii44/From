@@ -1,0 +1,18 @@
+.userform{
+  /* background-color: gainsboro; */
+  top: 5wef0px;
+  width: 40%;
+  margin-left: 30%;
+    margin-top: 10%;
+    /* margin-right:70px ; */
+    text-align: center;
+  align-items: center;
+  border: 1px solid rgb(216, 212, 212);
+
+  box-shadow: 0 0 13px inset  ;
+
+}
+
+.label{
+  margin-top: 20px;
+}

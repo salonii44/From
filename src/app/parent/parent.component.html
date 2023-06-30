@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+<!-- <p>parent works!</p> -->
+<!-- <h2>I am Parent</h2>
+<h5>{{childDataReceived}}</h5> -->
+
+<!-- <app-child (greetEvent)="greet($event)">  </app-child> -->
+<!-- <app-child [Employeename]="Ename"  [Employeeobj]="objname" > -->
+
+<!-- <app-child (childData)="receivedData($event)"></app-child> -->
+
+<app-product [name]="Emp"></app-product>
+<app-parents></app-parents>
+
+<h4>Create Product</h4>
+<form>
+  <div class="form-group">
+
+    <label for="name">Product Name</label>
+    <input type="text" ngModel class="form-control" name="name" #name>
+  </div>
+
+  <div class="form-group">
+
+    <label for="Price">Product Price </label>
+    <input type="text" class="form-control" ngModel name="Price" #price>
+  </div>
+  <button class="btn btn-primary" (click)="onAddProduct(name,price)">Add New Product</button>
+  <button class="btn btn-info" (click)="onSaveProduct()">Save Product</button>
+  <br>
+</form>
+
+<pre></pre>
+
+
+<table class="table ">
+  <thead class="thead-dark  ">
+    <tr>
+<th>#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Delete</th>
+    </tr>
+
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products; index as i">
+      <th scope="row">{{i+1}}</th>
+
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td (click)="onDeleteProduct(i)"><button class="btn btn-danger">Delete</button></td>
+    </tr>
+
+  </tbody>
+</table>
+
+

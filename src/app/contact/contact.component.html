@@ -1,0 +1,179 @@
+<!-- <h2 currencyPipeTs>Custome Pipes</h2>
+
+<p-button label="Submit"></p-button>
+
+
+
+
+<p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+  <ng-template pTemplate="header">
+      <tr>
+          <th>Code</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Quantity</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-product>
+      <tr>
+          <td>{{ product.code }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.category }}</td>
+          <td>{{ product.quantity }}</td>
+      </tr>
+  </ng-template>
+</p-table> -->
+
+<div class="card">
+  <p-table [columns]="cols" [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+      <ng-template pTemplate="header" let-columns>
+          <tr>
+              <th *ngFor="let col of columns">
+                  {{ col.header }}
+              </th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowData let-columns="columns">
+          <tr>
+              <td *ngFor="let col of columns">
+                  {{ rowData[col.field] }}
+              </td>
+          </tr>
+      </ng-template>
+  </p-table>
+</div>
+
+
+<!-- <h2 >{{7 | currencyPipeTs : 2}}</h2>
+<h3>{{13 | percent}}</h3>
+<h2>{{123 | currency: 'USD'}}</h2>
+<h2>{{123 | currency: 'INR'}}</h2>
+<h2>{{123 | currency: 'JPY'}}</h2>
+<h2>{{123 | currency: 'KRW'}}</h2>
+
+<br>
+<br/>
+<h2>{{todaysDate | date:'fullDate'}}</h2>
+<h2>{{todaysDate | date:'shortDate'}}</h2>
+<h2>{{todaysDate | date:'h:mm a zzzz'}}</h2>
+<h2>{{todaysDate | date:'yy'}}</h2> -->
+
+
+<!--  <h2>{{4 |  currencyPipeTs :5}}</h2> -->
+
+<!-- <h2>{{ 2 | customePipeTs: 4}}</h2> -->
+<!-- <h2>{{4 | customePipeTs: 4}}</h2> -->
+<!-- <h2>{{'saloni'|custome}}</h2> -->
+
+
+<!-- <h2  appCustomeStyleDirectiveTs>Custom Directive</h2> -->
+<!-- <h3>{{ date | date}}</h3> -->
+
+
+<!-- <input type="text" #added> -->
+<!-- <button (click)="addval(added)">Add Value</button> -->
+
+<!-- <button class="btn btn-success"  (click)="added(added)">Add </button> -->
+<!-- <h3>{{value}}</h3> -->
+
+<!-- {{11 | cieency}} -->
+
+<!-- <app-product [Ename]="Employee"></app-product> -->
+
+<!-- <h2 app-contact>ViewChild Directive</h2> -->
+
+<!-- <app-product [name]="InpName"></app-product> -->
+
+<!-- <h2>{{name}}</h2> -->
+<!-- <p>{{'salom,mklmxsas' | uppercase}}</p> -->
+
+<!--
+<ul *ngFor="let user of users">
+  <li>{{user.username}}</li>
+  <li>{{user.email}}</li>
+</ul> -->
+
+
+
+
+<!-- <form #userForm="ngForm" (ngSubmit)="getUserFormData(userForm)">
+
+  <div class="form-group mt-5 mr-4">
+
+    <input type="text" name="userId" ngModel placeholder="Enter userId">
+  </div>
+  <div class="form-group mr-4">
+    <input type="text" name="title" ngModel placeholder="Enter title">
+  </div>
+  <div class="form-group mr-4">
+    <input type="text" name="completed" ngModel placeholder="Enter completed">
+  </div>
+  <button class="btn btn-primary mr-2">Add new User</button>
+</form> -->
+
+<!-- <--<table class="table col-md-6">
+  <thead class="thead-dark ">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Technology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>1</td>
+    <td>Saloni</td>
+    <td>JavaScript</td>
+
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Payal</td>
+    <td>JavaScript</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Maya</td>
+    <td>JavaScript</td>
+  </tr>
+
+  </tbody>
+</table> -->
+
+<br>
+<!-- <input type="text"  #name> -->
+
+
+<!-- <button (click)="sendToParent(InputValue)">Add to Parent</button> -->
+
+
+<!-- <p-table [columns]="cols" [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+  <ng-template pTemplate="header" let-columns>
+      <tr>
+          <th *ngFor="let col of columns">
+              {{ col.header }}
+          </th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr>
+          <td *ngFor="let col of columns">
+              {{ rowData[col.field] }}
+          </td>
+      </tr>
+  </ng-template>
+</p-table> -->
+
+<!--
+<div class="card">
+  <div class="card-header">
+    Contact
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Username is <span class="text-primary">{{username}}</span> </h5>
+    <input type="text" class="form-control mb-2" #uname>
+    <button class="btn btn-primary" (click)="onChange(uname)">Change</button>
+  </div>
+</div> -->
+
+

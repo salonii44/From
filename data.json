@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "username": "Alex",
+      "email": "alex123@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "meerab khan",
+      "email": "meerab1234@gmail.com"
+    },
+    {
+      "id": 3,
+      "username": "Payal ghaware",
+      "email": "payal1232@gmail.com"
+    },
+    {
+      "id": 4,
+      "username": "Sonali adsul",
+      "email": "sonaliadsul122@gmail.com"
+    },
+    {
+      "id": 5,
+      "username": "Sanvi shah",
+      "email": "sanvi123457@gmail.com"
+    }
+  ]
+}
